@@ -218,6 +218,73 @@ h2 {
   color: var(--muted);
 }
 
+.autoparts-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.autopart-category {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.autopart-category h3 {
+  margin-bottom: 12px;
+}
+
+.autopart-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.autopart-list li {
+  border: 1px solid #edd7bd;
+  background: #fffdfa;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.autopart-list span {
+  font-weight: 600;
+}
+
+.autopart-list strong {
+  color: var(--primary-dark);
+}
+
+.status {
+  width: fit-content;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+.status.disponible {
+  background: rgba(22, 163, 74, 0.12);
+  color: #166534;
+}
+
+.status.poco-stock {
+  background: rgba(217, 119, 6, 0.14);
+  color: #9a3412;
+}
+
+.status.agotado {
+  background: rgba(220, 38, 38, 0.12);
+  color: #991b1b;
+}
+
 .alt {
   background: var(--surface-alt);
   border-top: 1px solid var(--border);
@@ -298,7 +365,8 @@ textarea {
 
   .grid-3,
   .hero-grid,
-  .two-col {
+  .two-col,
+  .autoparts-grid {
     grid-template-columns: 1fr;
   }
 }
