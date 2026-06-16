@@ -256,8 +256,7 @@ h2 {
 
 .autopart-list img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 180px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
@@ -567,6 +566,10 @@ h2 {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .autopart-list img {
+    height: 160px;
   }
 
   .whatsapp-widget {
