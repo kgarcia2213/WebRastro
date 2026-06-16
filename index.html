@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rastro del Barrio | Encuentra tesoros únicos</title>
+  <meta name="description" content="Rastro del Barrio: compra, vende e intercambia artículos únicos en el mercadillo local." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="Inicio">
+        <span class="brand-mark">RB</span>
+        <span>Rastro del Barrio</span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Abrir menú" />
+      <label for="navToggle" class="menu-toggle" aria-hidden="true">☰</label>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#categorias">Categorías</a>
+        <a href="#puestos">Puestos</a>
+        <a href="#vender">Cómo vender</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#puestos" class="btn btn-small">Ver puestos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Mercadillo local</p>
+          <h1>Descubre joyas escondidas en cada puesto</h1>
+          <p class="lead">
+            Ropa vintage, muebles, libros, vinilos, juguetes y mucho más.
+            Compra y vende en un ambiente cercano, auténtico y lleno de historia.
+          </p>
+          <div class="hero-actions">
+            <a href="#puestos" class="btn">Explorar puestos</a>
+            <a href="#vender" class="btn btn-ghost">Quiero vender</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Este domingo</h2>
+          <p>Parque Central · 8:00 AM - 4:00 PM</p>
+          <p class="highlight">Entrada gratuita</p>
+          <a href="#contacto" class="btn btn-full">Reservar espacio</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="container">
+        <p class="section-kicker">Categorías</p>
+        <h2>Lo que puedes encontrar</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Moda vintage</h3>
+            <p>Prendas únicas, accesorios retro y marcas clásicas.</p>
+          </article>
+          <article class="card">
+            <h3>Hogar y decoración</h3>
+            <p>Muebles restaurados, lámparas y piezas con personalidad.</p>
+          </article>
+          <article class="card">
+            <h3>Coleccionismo</h3>
+            <p>Monedas, cámaras antiguas, cómics y objetos de época.</p>
+          </article>
+          <article class="card">
+            <h3>Libros y vinilos</h3>
+            <p>Títulos difíciles de conseguir y música para melómanos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="puestos">
+      <div class="container">
+        <p class="section-kicker">Puestos destacados</p>
+        <h2>Vendedores recomendados de la semana</h2>
+        <div class="grid-3">
+          <article class="stall">
+            <h3>El Baúl Antiguo</h3>
+            <p>Especialidad en vajillas, relojes y decoración clásica.</p>
+          </article>
+          <article class="stall">
+            <h3>Vinilo Vivo</h3>
+            <p>Rock, salsa, jazz y ediciones limitadas en excelente estado.</p>
+          </article>
+          <article class="stall">
+            <h3>Rincón Retro Kids</h3>
+            <p>Juguetes de colección y juegos de mesa para toda la familia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vender">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">Cómo vender</p>
+          <h2>Únete al rastro en 3 pasos</h2>
+          <ol class="steps">
+            <li>Registra tus datos en el formulario.</li>
+            <li>Recibe confirmación de espacio disponible.</li>
+            <li>Trae tus artículos y empieza a vender.</li>
+          </ol>
+          <p class="muted">Puestos desde $10 por jornada. Cupos limitados.</p>
+        </div>
+
+        <form class="contact-form" action="#" method="post" id="sellerForm">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="+34 ..." required />
+
+          <label for="categoria">Categoría principal</label>
+          <input id="categoria" name="categoria" type="text" placeholder="Ej: vintage, libros..." required />
+
+          <label for="mensaje">¿Qué venderás?</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Describe tus artículos"></textarea>
+
+          <button type="submit" class="btn btn-full">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta" id="contacto">
+      <div class="container">
+        <p class="section-kicker">Contacto</p>
+        <h2>Te esperamos en el próximo rastro</h2>
+        <ul class="contact-points">
+          <li>📍 Parque Central, zona peatonal</li>
+          <li>📞 +34 600 123 456</li>
+          <li>✉️ hola@rastrobarrio.com</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Rastro del Barrio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
