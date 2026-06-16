@@ -351,16 +351,20 @@ h2 {
   position: relative;
 }
 
+.whatsapp-widget-card.is-hidden {
+  display: none;
+}
+
 .whatsapp-widget-title {
   margin: 0 0 8px;
-  font-size: 1.85rem;
+  font-size: 1.55rem;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .whatsapp-widget-text {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: rgba(245, 247, 250, 0.94);
   line-height: 1.35;
   font-weight: 600;
@@ -578,11 +582,11 @@ h2 {
   }
 
   .whatsapp-widget-title {
-    font-size: 1.6rem;
+    font-size: 1.35rem;
   }
 
   .whatsapp-widget-text {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
   }
 
   .whatsapp-float {
