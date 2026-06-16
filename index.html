@@ -287,21 +287,15 @@
           <p class="muted">Aceptamos efectivo, transferencia y pago con tarjeta.</p>
         </div>
 
-        <form class="contact-form" action="#" method="post">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
-
-          <label for="telefono">Teléfono / WhatsApp</label>
-          <input id="telefono" name="telefono" type="tel" placeholder="+52 ..." required />
-
-          <label for="vehiculo">Vehículo</label>
-          <input id="vehiculo" name="vehiculo" type="text" placeholder="Ej: Versa 2018 1.6" required />
-
-          <label for="pieza">Pieza que buscas</label>
-          <textarea id="pieza" name="pieza" placeholder="Describe la pieza o número de parte"></textarea>
-
-          <button type="submit" class="btn btn-full">Solicitar cotización</button>
-        </form>
+        <div class="location-map" aria-label="Mapa de ubicación de Rastro JR Autopartes">
+          <iframe
+            title="Ubicación de Rastro JR Autopartes"
+            src="https://www.google.com/maps?q=Ciudad%20de%20M%C3%A9xico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -331,7 +325,7 @@
     rel="noopener noreferrer"
     aria-label="WhatsApp: estamos disponibles"
   >
-    <span class="whatsapp-float-icon" aria-hidden="true">💬</span>
+    <span class="whatsapp-float-icon" aria-hidden="true">🟢</span>
     <span>Estamos disponibles</span>
   </a>
 </body>
